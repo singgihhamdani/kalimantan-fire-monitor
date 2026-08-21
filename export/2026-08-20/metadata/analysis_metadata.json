@@ -1,0 +1,38 @@
+{
+  "analysis_timestamp_utc": "2026-08-20T16:47:04.477276+00:00",
+  "windows": {
+    "24h": {
+      "start": "2026-08-19T16:47:04.477276+00:00",
+      "end": "2026-08-20T16:47:04.477276+00:00"
+    },
+    "72h": {
+      "start": "2026-08-17T16:47:04.477276+00:00",
+      "end": "2026-08-20T16:47:04.477276+00:00"
+    },
+    "7d": {
+      "start": "2026-08-13T16:47:04.477276+00:00",
+      "end": "2026-08-20T16:47:04.477276+00:00"
+    }
+  },
+  "datasets": {
+    "snpp_viirs": "NASA/LANCE/SNPP_VIIRS/C2",
+    "noaa20_viirs": "NASA/LANCE/NOAA20_VIIRS/C2",
+    "admin_l1": "WM/geoLab/geoBoundaries/600/ADM1",
+    "admin_l2": "WM/geoLab/geoBoundaries/600/ADM2"
+  },
+  "confidence_threshold": 1,
+  "clustering": {
+    "method": "DBSCAN",
+    "eps_km": 2.0,
+    "min_samples": 3
+  },
+  "grid_size_deg": 0.1,
+  "detection_counts": {
+    "raw_24h": 4999,
+    "operational_24h": 4888,
+    "raw_72h": 4999,
+    "operational_72h": 4955,
+    "raw_7d": 4999,
+    "operational_7d": 4959
+  }
+}

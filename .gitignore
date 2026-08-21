@@ -1,0 +1,82 @@
+# ==========================================
+# Kalimantan Fire Situation Monitor - .gitignore
+# ==========================================
+
+# Python virtual environment
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints & autosaves
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+*-checkpoint.ipynb
+
+# AI Agent & Prompt Configurations (Keep local only)
+AGENTS.md
+CLAUDE.md
+.cursorrules
+.cursor/
+.agents/
+.gemini/
+copilot-instructions.md
+
+# Social Media Drafts & Marketing Notes (Keep local only)
+INSTAGRAM_POST_CONTENT.md
+*instagram*.md
+*social_media*.md
+
+# Backup & scratch directories
+bc/
+scratch/
+tmp/
+temp/
+*.bak
+
+# Temporary archive files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Operating System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+*Zone.Identifier
+
+# IDE & Editor settings
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Environment variables & secrets
+.env
+.env.*
+*.secret
+credentials.json
+client_secret*.json
+
+# GeoTIFF raster cache / large binary rasters (if generated locally)
+*.tif
+*.tiff
+*.nc
+*.hdf
+*.h5
+!export/**/*.tif

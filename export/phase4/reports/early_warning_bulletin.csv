@@ -1,0 +1,11 @@
+cluster_id,priority_rank,province,regency,composite_risk_score,early_warning_level,primary_threat,total_burned_ha,kbdi_score,persistence_prob_48h,smoke_severity
+327,1,East Kalimantan,Berau,83.0,Level 4: Critical Emergency,Kebakaran Gambut Bawah Permukaan + Defisit Ekstrem,1727.77,521.4,0.883,Dense
+318,2,West Kalimantan,Landak,52.2,Level 2: Alert,Potensi Perluasan Titik Panas Moderat,0.0,512.9,0.878,Moderate
+58,8,West Kalimantan,Ketapang,49.9,Level 2: Alert,Potensi Perluasan Titik Panas Moderat,312.97,419.8,0.745,Moderate
+16,10,Central Kalimantan,Kotawaringin Timur,48.8,Level 2: Alert,Potensi Perluasan Titik Panas Moderat,294.05,415.6,0.741,Low
+243,5,West Kalimantan,Sanggau,43.7,Level 2: Alert,Potensi Perluasan Titik Panas Moderat,0.0,469.3,0.636,Moderate
+299,3,West Kalimantan,Sekadau,43.2,Level 2: Alert,Potensi Perluasan Titik Panas Moderat,0.0,478.6,0.647,Moderate
+314,9,East Kalimantan,Kutai Timur,41.6,Level 2: Alert,Potensi Perluasan Titik Panas Moderat,147.55,472.9,0.64,Low
+298,6,West Kalimantan,Kapuas Hulu,36.5,Level 1: Monitor,Aktivitas Termal Terisolir / Basah,111.86,431.0,0.483,Low
+256,4,North Kalimantan,Bulungan,34.6,Level 1: Monitor,Aktivitas Termal Terisolir / Basah,0.0,420.0,0.469,Low
+317,7,North Kalimantan,Malinau,21.5,Level 1: Monitor,Aktivitas Termal Terisolir / Basah,90.07,199.7,0.227,Low

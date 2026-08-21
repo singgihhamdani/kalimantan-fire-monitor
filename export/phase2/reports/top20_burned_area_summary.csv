@@ -1,0 +1,11 @@
+cluster_id,priority_rank,sensor_used,baseline_days,pre_fire_start,pre_fire_end,post_fire_start,post_fire_end,buffer_area_ha,total_burned_ha,high_severity_ha,mod_high_severity_ha,mod_low_severity_ha,low_severity_ha,unburned_ha,mean_dnbr,max_dnbr,modis_overlap_ha,modis_agreement_pct,status,province,regency
+327,1,Sentinel-2,30,2026-07-15,2026-08-13,2026-08-19,2026-09-19,7723.97,1727.77,139.04,305.76,353.03,929.94,5996.2,0.102,1.477,0.0,0.0,Terkonfirmasi (Confirmed),East Kalimantan,Berau
+318,2,Sentinel-2 (Menunggu Citra Pasca-Api),30,2026-07-17,2026-08-15,2026-08-19,2026-09-19,7853.98,0.0,0.0,0.0,0.0,0.0,7853.98,0.0,0.0,0.0,0.0,Menunggu Citra Pasca-Api (Api Masih Aktif),West Kalimantan,Landak
+299,3,Sentinel-2 (Menunggu Citra Pasca-Api),30,2026-07-16,2026-08-14,2026-08-19,2026-09-19,7853.98,0.0,0.0,0.0,0.0,0.0,7853.98,0.0,0.0,0.0,0.0,Menunggu Citra Pasca-Api (Api Masih Aktif),West Kalimantan,Sekadau
+256,4,Sentinel-2 (Menunggu Citra Pasca-Api),30,2026-07-17,2026-08-15,2026-08-19,2026-09-19,7853.98,0.0,0.0,0.0,0.0,0.0,7853.98,0.0,0.0,0.0,0.0,Menunggu Citra Pasca-Api (Api Masih Aktif),North Kalimantan,Bulungan
+243,5,Sentinel-2 (Menunggu Citra Pasca-Api),30,2026-07-15,2026-08-13,2026-08-19,2026-09-19,7853.98,0.0,0.0,0.0,0.0,0.0,7853.98,0.0,0.0,0.0,0.0,Menunggu Citra Pasca-Api (Api Masih Aktif),West Kalimantan,Sanggau
+298,6,Sentinel-2,30,2026-07-16,2026-08-14,2026-08-19,2026-09-19,7703.64,111.86,0.28,0.64,10.5,100.44,7591.78,0.041,0.994,0.0,0.0,Terkonfirmasi (Confirmed),West Kalimantan,Kapuas Hulu
+317,7,Landsat-8/9,30,2026-07-15,2026-08-13,2026-08-18,2026-09-18,6626.2,90.07,0.0,0.0,0.27,89.8,6536.13,0.006,0.332,0.0,0.0,Terkonfirmasi (Confirmed),North Kalimantan,Malinau
+58,8,Sentinel-2,30,2026-07-16,2026-08-14,2026-08-18,2026-09-18,3996.51,312.97,1.95,12.26,27.66,271.1,3683.54,0.036,1.004,0.0,0.0,Terkonfirmasi (Confirmed),West Kalimantan,Ketapang
+314,9,Sentinel-2,30,2026-07-16,2026-08-14,2026-08-19,2026-09-19,7126.51,147.55,0.0,0.32,19.86,127.37,6978.96,0.019,0.477,0.0,0.0,Terkonfirmasi (Confirmed),East Kalimantan,Kutai Timur
+16,10,Sentinel-2,30,2026-07-14,2026-08-12,2026-08-17,2026-09-17,4734.7,294.05,1.27,15.17,35.49,242.12,4440.65,0.012,1.279,0.0,0.0,Terkonfirmasi (Confirmed),Central Kalimantan,Kotawaringin Timur

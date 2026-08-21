@@ -1,0 +1,11 @@
+cluster_id,is_peatland,peatland_pct,burned_on_peat_ha
+327,True,34.0,587.44
+318,True,34.0,0.0
+299,False,8.5,0.0
+256,False,8.5,0.0
+243,False,8.5,0.0
+298,False,8.5,9.51
+317,False,8.5,7.66
+58,True,72.5,226.9
+314,False,8.5,12.54
+16,True,72.5,213.19

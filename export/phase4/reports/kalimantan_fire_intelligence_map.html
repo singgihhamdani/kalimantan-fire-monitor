@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a9c08ebd3e0054193beba1932702b28f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a9c08ebd3e0054193beba1932702b28f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a9c08ebd3e0054193beba1932702b28f = L.map(
+                "map_a9c08ebd3e0054193beba1932702b28f",
+                {
+                    center: [0.5, 114.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_88da66775b39afec9c9f12eae8237124 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_88da66775b39afec9c9f12eae8237124.addTo(map_a9c08ebd3e0054193beba1932702b28f);
+        
+    
+            var circle_marker_00c91bd1519c363029c0d45c31219063 = L.circleMarker(
+                [2.274, 117.902],
+                {"bubblingMouseEvents": true, "color": "#D32F2F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D32F2F", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.3, "stroke": true, "weight": 3}
+            ).addTo(map_a9c08ebd3e0054193beba1932702b28f);
+        
+    
+        var popup_fa8a4807b5ab736e54822a0203d910a9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_046ec9c5d738e5fef89319a6fa51049a = $(`<div id="html_046ec9c5d738e5fef89319a6fa51049a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 280px;">         <h4 style="margin:0; color:#D32F2F;">Klaster #327 — Berau</h4>         <b>Provinsi:</b> East Kalimantan<br>         <b>Koordinat:</b> 2.274°N, 117.902°E<br>         <hr style="margin: 5px 0;">         <b>Tingkat Bahaya:</b> <span style="color:#D32F2F; font-weight:bold;">Level 4: Critical Emergency</span><br>         <b>Skor Risiko Komposit:</b> 83.0 / 100<br>         <b>Ancaman Utama:</b> Kebakaran Gambut Bawah Permukaan + Defisit Ekstrem<br>         <b>Luas Terbakar (ha):</b> 1727.8 ha<br>         <b>Status Gambut:</b> Ya<br>         <b>Probabilitas Persistensi (48h):</b> 88.3%<br>         <b>Indeks Asap (AAI Maks):</b> 2.550507307056744 (Dense)<br>         <b>Indeks Kerentanan (KFSI):</b> 0.964 (Very High)     </div>     </div>`)[0];
+                popup_fa8a4807b5ab736e54822a0203d910a9.setContent(html_046ec9c5d738e5fef89319a6fa51049a);
+            
+        
+
+        circle_marker_00c91bd1519c363029c0d45c31219063.bindPopup(popup_fa8a4807b5ab736e54822a0203d910a9)
+        ;
+
+        
+    
+    
+            var circle_marker_33bd049cb002cb487750a239a6d8b775 = L.circleMarker(
+                [0.211, 109.794],
+                {"bubblingMouseEvents": true, "color": "#FBC02D", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FBC02D", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.22, "stroke": true, "weight": 3}
+            ).addTo(map_a9c08ebd3e0054193beba1932702b28f);
+        
+    
+        var popup_bbe7baa977c8041cb53e71fc912060cf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7517e863fc198b3cfac378a2405ab873 = $(`<div id="html_7517e863fc198b3cfac378a2405ab873" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 280px;">         <h4 style="margin:0; color:#FBC02D;">Klaster #318 — Landak</h4>         <b>Provinsi:</b> West Kalimantan<br>         <b>Koordinat:</b> 0.211°N, 109.794°E<br>         <hr style="margin: 5px 0;">         <b>Tingkat Bahaya:</b> <span style="color:#FBC02D; font-weight:bold;">Level 2: Alert</span><br>         <b>Skor Risiko Komposit:</b> 52.2 / 100<br>         <b>Ancaman Utama:</b> Potensi Perluasan Titik Panas Moderat<br>         <b>Luas Terbakar (ha):</b> 0.0 ha<br>         <b>Status Gambut:</b> Ya<br>         <b>Probabilitas Persistensi (48h):</b> 87.8%<br>         <b>Indeks Asap (AAI Maks):</b> 1.138124108316358 (Moderate)<br>         <b>Indeks Kerentanan (KFSI):</b> 0.957 (Very High)     </div>     </div>`)[0];
+                popup_bbe7baa977c8041cb53e71fc912060cf.setContent(html_7517e863fc198b3cfac378a2405ab873);
+            
+        
+
+        circle_marker_33bd049cb002cb487750a239a6d8b775.bindPopup(popup_bbe7baa977c8041cb53e71fc912060cf)
+        ;
+
+        
+    
+    
+            var circle_marker_9541bd44903267734d283061ed199841 = L.circleMarker(
+                [0.086, 110.951],
+                {"bubblingMouseEvents": true, "color": "#FBC02D", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FBC02D", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.32, "stroke": true, "weight": 3}
+            ).addTo(map_a9c08ebd3e0054193beba1932702b28f);
+        
+    
+        var popup_a8dd40fb132d70e547b184ccdb3dd096 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e554b78effd8b29a704208e58230762f = $(`<div id="html_e554b78effd8b29a704208e58230762f" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 280px;">         <h4 style="margin:0; color:#FBC02D;">Klaster #299 — Sekadau</h4>         <b>Provinsi:</b> West Kalimantan<br>         <b>Koordinat:</b> 0.086°N, 110.951°E<br>         <hr style="margin: 5px 0;">         <b>Tingkat Bahaya:</b> <span style="color:#FBC02D; font-weight:bold;">Level 2: Alert</span><br>         <b>Skor Risiko Komposit:</b> 43.2 / 100<br>         <b>Ancaman Utama:</b> Potensi Perluasan Titik Panas Moderat<br>         <b>Luas Terbakar (ha):</b> 0.0 ha<br>         <b>Status Gambut:</b> Tidak<br>         <b>Probabilitas Persistensi (48h):</b> 64.7%<br>         <b>Indeks Asap (AAI Maks):</b> 1.0910505439002374 (Moderate)<br>         <b>Indeks Kerentanan (KFSI):</b> 0.749 (High)     </div>     </div>`)[0];
+                popup_a8dd40fb132d70e547b184ccdb3dd096.setContent(html_e554b78effd8b29a704208e58230762f);
+            
+        
+
+        circle_marker_9541bd44903267734d283061ed199841.bindPopup(popup_a8dd40fb132d70e547b184ccdb3dd096)
+        ;
+
+        
+    
+    
+            var circle_marker_c5c2e742563d71bad569107cc90e58af = L.circleMarker(
+                [2.89, 116.89],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.46, "stroke": true, "weight": 3}
+            ).addTo(map_a9c08ebd3e0054193beba1932702b28f);
+        
+    
+        var popup_85594e7719d7bcf8bf0e2b2f983695a6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4c44d147003f94d9e5d3456f3bf59681 = $(`<div id="html_4c44d147003f94d9e5d3456f3bf59681" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 280px;">         <h4 style="margin:0; color:#388E3C;">Klaster #256 — Bulungan</h4>         <b>Provinsi:</b> North Kalimantan<br>         <b>Koordinat:</b> 2.890°N, 116.890°E<br>         <hr style="margin: 5px 0;">         <b>Tingkat Bahaya:</b> <span style="color:#388E3C; font-weight:bold;">Level 1: Monitor</span><br>         <b>Skor Risiko Komposit:</b> 34.6 / 100<br>         <b>Ancaman Utama:</b> Aktivitas Termal Terisolir / Basah<br>         <b>Luas Terbakar (ha):</b> 0.0 ha<br>         <b>Status Gambut:</b> Tidak<br>         <b>Probabilitas Persistensi (48h):</b> 46.9%<br>         <b>Indeks Asap (AAI Maks):</b> 0.4231716692454518 (Low)<br>         <b>Indeks Kerentanan (KFSI):</b> 0.7 (High)     </div>     </div>`)[0];
+                popup_85594e7719d7bcf8bf0e2b2f983695a6.setContent(html_4c44d147003f94d9e5d3456f3bf59681);
+            
+        
+
+        circle_marker_c5c2e742563d71bad569107cc90e58af.bindPopup(popup_85594e7719d7bcf8bf0e2b2f983695a6)
+        ;
+
+        
+    
+    
+            var circle_marker_38f45d3e59c7a28107e45df00e067bff = L.circleMarker(
+                [0.157, 110.486],
+                {"bubblingMouseEvents": true, "color": "#FBC02D", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FBC02D", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.370000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_a9c08ebd3e0054193beba1932702b28f);
+        
+    
+        var popup_94bf161c5d554cc55464715709a4506b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e663345246649463195559e9d8b875ea = $(`<div id="html_e663345246649463195559e9d8b875ea" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 280px;">         <h4 style="margin:0; color:#FBC02D;">Klaster #243 — Sanggau</h4>         <b>Provinsi:</b> West Kalimantan<br>         <b>Koordinat:</b> 0.157°N, 110.486°E<br>         <hr style="margin: 5px 0;">         <b>Tingkat Bahaya:</b> <span style="color:#FBC02D; font-weight:bold;">Level 2: Alert</span><br>         <b>Skor Risiko Komposit:</b> 43.7 / 100<br>         <b>Ancaman Utama:</b> Potensi Perluasan Titik Panas Moderat<br>         <b>Luas Terbakar (ha):</b> 0.0 ha<br>         <b>Status Gambut:</b> Tidak<br>         <b>Probabilitas Persistensi (48h):</b> 63.6%<br>         <b>Indeks Asap (AAI Maks):</b> 1.381285429001988 (Moderate)<br>         <b>Indeks Kerentanan (KFSI):</b> 0.741 (High)     </div>     </div>`)[0];
+                popup_94bf161c5d554cc55464715709a4506b.setContent(html_e663345246649463195559e9d8b875ea);
+            
+        
+
+        circle_marker_38f45d3e59c7a28107e45df00e067bff.bindPopup(popup_94bf161c5d554cc55464715709a4506b)
+        ;
+
+        
+    
+    
+            var circle_marker_0a7c7f4cf2bf74093380c3f5bd478a92 = L.circleMarker(
+                [0.45, 112.85],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.65, "stroke": true, "weight": 3}
+            ).addTo(map_a9c08ebd3e0054193beba1932702b28f);
+        
+    
+        var popup_efa00cf0ca4488909b8a613a1b38c553 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f9fa0b4a8189eae17e626370f7009a37 = $(`<div id="html_f9fa0b4a8189eae17e626370f7009a37" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 280px;">         <h4 style="margin:0; color:#388E3C;">Klaster #298 — Kapuas Hulu</h4>         <b>Provinsi:</b> West Kalimantan<br>         <b>Koordinat:</b> 0.450°N, 112.850°E<br>         <hr style="margin: 5px 0;">         <b>Tingkat Bahaya:</b> <span style="color:#388E3C; font-weight:bold;">Level 1: Monitor</span><br>         <b>Skor Risiko Komposit:</b> 36.5 / 100<br>         <b>Ancaman Utama:</b> Aktivitas Termal Terisolir / Basah<br>         <b>Luas Terbakar (ha):</b> 111.9 ha<br>         <b>Status Gambut:</b> Tidak<br>         <b>Probabilitas Persistensi (48h):</b> 48.3%<br>         <b>Indeks Asap (AAI Maks):</b> 0.2882529497151276 (Low)<br>         <b>Indeks Kerentanan (KFSI):</b> 0.709 (High)     </div>     </div>`)[0];
+                popup_efa00cf0ca4488909b8a613a1b38c553.setContent(html_f9fa0b4a8189eae17e626370f7009a37);
+            
+        
+
+        circle_marker_0a7c7f4cf2bf74093380c3f5bd478a92.bindPopup(popup_efa00cf0ca4488909b8a613a1b38c553)
+        ;
+
+        
+    
+    
+            var circle_marker_d24d863888822a5ce511652cd3f3702a = L.circleMarker(
+                [3.12, 116.12],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.15, "stroke": true, "weight": 3}
+            ).addTo(map_a9c08ebd3e0054193beba1932702b28f);
+        
+    
+        var popup_4cd5ad7bce2d303e9c7cccce906c7ad2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d572871dbe470a8e9a5c6081709b1e42 = $(`<div id="html_d572871dbe470a8e9a5c6081709b1e42" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 280px;">         <h4 style="margin:0; color:#388E3C;">Klaster #317 — Malinau</h4>         <b>Provinsi:</b> North Kalimantan<br>         <b>Koordinat:</b> 3.120°N, 116.120°E<br>         <hr style="margin: 5px 0;">         <b>Tingkat Bahaya:</b> <span style="color:#388E3C; font-weight:bold;">Level 1: Monitor</span><br>         <b>Skor Risiko Komposit:</b> 21.5 / 100<br>         <b>Ancaman Utama:</b> Aktivitas Termal Terisolir / Basah<br>         <b>Luas Terbakar (ha):</b> 90.1 ha<br>         <b>Status Gambut:</b> Tidak<br>         <b>Probabilitas Persistensi (48h):</b> 22.7%<br>         <b>Indeks Asap (AAI Maks):</b> 0.45417681336476473 (Low)<br>         <b>Indeks Kerentanan (KFSI):</b> 0.516 (Moderate)     </div>     </div>`)[0];
+                popup_4cd5ad7bce2d303e9c7cccce906c7ad2.setContent(html_d572871dbe470a8e9a5c6081709b1e42);
+            
+        
+
+        circle_marker_d24d863888822a5ce511652cd3f3702a.bindPopup(popup_4cd5ad7bce2d303e9c7cccce906c7ad2)
+        ;
+
+        
+    
+    
+            var circle_marker_c4f91c623e51116cabf511f06ea926e2 = L.circleMarker(
+                [-1.938, 110.248],
+                {"bubblingMouseEvents": true, "color": "#FBC02D", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FBC02D", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.99, "stroke": true, "weight": 3}
+            ).addTo(map_a9c08ebd3e0054193beba1932702b28f);
+        
+    
+        var popup_08b10c7d868d871be5d7db88d3766a3a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ae28810cbdc82722bc8868dce5738470 = $(`<div id="html_ae28810cbdc82722bc8868dce5738470" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 280px;">         <h4 style="margin:0; color:#FBC02D;">Klaster #58 — Ketapang</h4>         <b>Provinsi:</b> West Kalimantan<br>         <b>Koordinat:</b> -1.938°N, 110.248°E<br>         <hr style="margin: 5px 0;">         <b>Tingkat Bahaya:</b> <span style="color:#FBC02D; font-weight:bold;">Level 2: Alert</span><br>         <b>Skor Risiko Komposit:</b> 49.9 / 100<br>         <b>Ancaman Utama:</b> Potensi Perluasan Titik Panas Moderat<br>         <b>Luas Terbakar (ha):</b> 313.0 ha<br>         <b>Status Gambut:</b> Ya<br>         <b>Probabilitas Persistensi (48h):</b> 74.5%<br>         <b>Indeks Asap (AAI Maks):</b> 1.0958774089830987 (Moderate)<br>         <b>Indeks Kerentanan (KFSI):</b> 0.88 (Very High)     </div>     </div>`)[0];
+                popup_08b10c7d868d871be5d7db88d3766a3a.setContent(html_ae28810cbdc82722bc8868dce5738470);
+            
+        
+
+        circle_marker_c4f91c623e51116cabf511f06ea926e2.bindPopup(popup_08b10c7d868d871be5d7db88d3766a3a)
+        ;
+
+        
+    
+    
+            var circle_marker_54abdb1802cff03cfdf498789c591c2c = L.circleMarker(
+                [1.845, 117.421],
+                {"bubblingMouseEvents": true, "color": "#FBC02D", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FBC02D", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.16, "stroke": true, "weight": 3}
+            ).addTo(map_a9c08ebd3e0054193beba1932702b28f);
+        
+    
+        var popup_9a0f12c8cc4a85ce23649c1cc628f1fd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f13b9de98d22f30bc7d1c776ca207a52 = $(`<div id="html_f13b9de98d22f30bc7d1c776ca207a52" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 280px;">         <h4 style="margin:0; color:#FBC02D;">Klaster #314 — Kutai Timur</h4>         <b>Provinsi:</b> East Kalimantan<br>         <b>Koordinat:</b> 1.845°N, 117.421°E<br>         <hr style="margin: 5px 0;">         <b>Tingkat Bahaya:</b> <span style="color:#FBC02D; font-weight:bold;">Level 2: Alert</span><br>         <b>Skor Risiko Komposit:</b> 41.6 / 100<br>         <b>Ancaman Utama:</b> Potensi Perluasan Titik Panas Moderat<br>         <b>Luas Terbakar (ha):</b> 147.6 ha<br>         <b>Status Gambut:</b> Tidak<br>         <b>Probabilitas Persistensi (48h):</b> 64.0%<br>         <b>Indeks Asap (AAI Maks):</b> 0.19997802376775975 (Low)<br>         <b>Indeks Kerentanan (KFSI):</b> 0.744 (High)     </div>     </div>`)[0];
+                popup_9a0f12c8cc4a85ce23649c1cc628f1fd.setContent(html_f13b9de98d22f30bc7d1c776ca207a52);
+            
+        
+
+        circle_marker_54abdb1802cff03cfdf498789c591c2c.bindPopup(popup_9a0f12c8cc4a85ce23649c1cc628f1fd)
+        ;
+
+        
+    
+    
+            var circle_marker_8c11e3ff1a4915788197bd9e89b3812e = L.circleMarker(
+                [-2.15, 112.98],
+                {"bubblingMouseEvents": true, "color": "#FBC02D", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FBC02D", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.879999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_a9c08ebd3e0054193beba1932702b28f);
+        
+    
+        var popup_eb72585e4402da1329156ca77b6b1e8e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a9d142fe80ab7a8e90ac5da4028cbd47 = $(`<div id="html_a9d142fe80ab7a8e90ac5da4028cbd47" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; width: 280px;">         <h4 style="margin:0; color:#FBC02D;">Klaster #16 — Kotawaringin Timur</h4>         <b>Provinsi:</b> Central Kalimantan<br>         <b>Koordinat:</b> -2.150°N, 112.980°E<br>         <hr style="margin: 5px 0;">         <b>Tingkat Bahaya:</b> <span style="color:#FBC02D; font-weight:bold;">Level 2: Alert</span><br>         <b>Skor Risiko Komposit:</b> 48.8 / 100<br>         <b>Ancaman Utama:</b> Potensi Perluasan Titik Panas Moderat<br>         <b>Luas Terbakar (ha):</b> 294.1 ha<br>         <b>Status Gambut:</b> Ya<br>         <b>Probabilitas Persistensi (48h):</b> 74.1%<br>         <b>Indeks Asap (AAI Maks):</b> 0.9612932205208085 (Low)<br>         <b>Indeks Kerentanan (KFSI):</b> 0.876 (Very High)     </div>     </div>`)[0];
+                popup_eb72585e4402da1329156ca77b6b1e8e.setContent(html_a9d142fe80ab7a8e90ac5da4028cbd47);
+            
+        
+
+        circle_marker_8c11e3ff1a4915788197bd9e89b3812e.bindPopup(popup_eb72585e4402da1329156ca77b6b1e8e)
+        ;
+
+        
+    
+</script>
+</html>

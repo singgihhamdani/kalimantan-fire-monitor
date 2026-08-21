@@ -1,0 +1,37 @@
+{
+  "phase": 2,
+  "phase_title": "Konfirmasi Area Terbakar & Penilaian Tingkat Keparahan",
+  "analysis_timestamp_utc": "2026-08-20T18:07:35.386687+00:00",
+  "ee_project_id": "riset-banjarnegara",
+  "parameters": {
+    "top_n_clusters": 20,
+    "cluster_buffer_km": 5.0,
+    "baseline_days_default": 30,
+    "fallback_baseline_days": 60,
+    "post_fire_days": 30,
+    "dnbr_burned_threshold": 0.1,
+    "weights": {
+      "w_count": 0.35,
+      "w_frp": 0.3,
+      "w_conf": 0.15,
+      "w_persist": 0.2
+    }
+  },
+  "datasets": {
+    "sentinel2_primary": "COPERNICUS/S2_SR_HARMONIZED",
+    "landsat9_fallback": "LANDSAT/LC09/C02/T1_L2",
+    "landsat8_fallback": "LANDSAT/LC08/C02/T1_L2",
+    "modis_validation": "MODIS/061/MCD64A1"
+  },
+  "results_summary": {
+    "total_clusters_analyzed": 10,
+    "total_confirmed_burned_ha": 2684.2700000000004,
+    "total_high_severity_ha": 142.54,
+    "sensor_breakdown": {
+      "Sentinel-2": 5,
+      "Sentinel-2 (Menunggu Citra Pasca-Api)": 4,
+      "Landsat-8/9": 1
+    },
+    "validation_pass_rate": "10/10"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "phase": 3,
+  "phase_title": "Konteks Lingkungan & Penilaian Cuaca Kebakaran",
+  "analysis_timestamp_utc": "2026-08-20T18:45:53.077710+00:00",
+  "ee_project_id": "riset-banjarnegara",
+  "parameters": {
+    "short_term_precipitation_days": 30,
+    "cumulative_precipitation_days": 90,
+    "cluster_buffer_km": 5.0,
+    "kbdi_scale": "0-800"
+  },
+  "datasets": {
+    "precipitation": "UCSB-CHG/CHIRPS/DAILY",
+    "weather_reanalysis": "ECMWF/ERA5_LAND/DAILY_AGGR",
+    "land_surface_temperature": "MODIS/061/MOD11A1",
+    "land_cover": "ESA/WorldCover/v200",
+    "peatland_primary": "projects/sat-io/open-datasets/GLOBAL_PEATLAND_MAP"
+  },
+  "results_summary": {
+    "total_clusters_analyzed": 10,
+    "clusters_on_peatland": 4,
+    "total_burned_on_peat_ha": 1057.24,
+    "validation_pass_rate": "10/10"
+  }
+}

@@ -1,0 +1,265 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            117.902,
+            2.274
+          ],
+          [
+            117.88865615843768,
+            2.297094010767585
+          ]
+        ]
+      },
+      "properties": {
+        "cluster_id": 327,
+        "province": "East Kalimantan",
+        "regency": "Berau",
+        "displacement_km": 2.96,
+        "propagation_speed_kmd": 0.74,
+        "heading_deg": 330.0,
+        "persistence_risk": "Extreme",
+        "persistence_prob_48h": 0.883
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            109.794,
+            0.211
+          ],
+          [
+            109.79039637196045,
+            0.21724162453177973
+          ]
+        ]
+      },
+      "properties": {
+        "cluster_id": 318,
+        "province": "West Kalimantan",
+        "regency": "Landak",
+        "displacement_km": 0.8,
+        "propagation_speed_kmd": 0.2,
+        "heading_deg": 330.0,
+        "persistence_risk": "Extreme",
+        "persistence_prob_48h": 0.878
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            110.951,
+            0.086
+          ],
+          [
+            110.94964864712638,
+            0.0883406091994174
+          ]
+        ]
+      },
+      "properties": {
+        "cluster_id": 299,
+        "province": "West Kalimantan",
+        "regency": "Sekadau",
+        "displacement_km": 0.3,
+        "propagation_speed_kmd": 0.07,
+        "heading_deg": 330.0,
+        "persistence_risk": "High",
+        "persistence_prob_48h": 0.647
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.89,
+            2.89
+          ],
+          [
+            116.88864692777365,
+            2.8923406091994175
+          ]
+        ]
+      },
+      "properties": {
+        "cluster_id": 256,
+        "province": "North Kalimantan",
+        "regency": "Bulungan",
+        "displacement_km": 0.3,
+        "propagation_speed_kmd": 0.07,
+        "heading_deg": 330.0,
+        "persistence_risk": "Moderate",
+        "persistence_prob_48h": 0.469
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            110.486,
+            0.157
+          ],
+          [
+            110.48464864357531,
+            0.1593406091994174
+          ]
+        ]
+      },
+      "properties": {
+        "cluster_id": 243,
+        "province": "West Kalimantan",
+        "regency": "Sanggau",
+        "displacement_km": 0.3,
+        "propagation_speed_kmd": 0.07,
+        "heading_deg": 330.0,
+        "persistence_risk": "High",
+        "persistence_prob_48h": 0.636
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            112.85,
+            0.45
+          ],
+          [
+            112.84801795688713,
+            0.45343289349247884
+          ]
+        ]
+      },
+      "properties": {
+        "cluster_id": 298,
+        "province": "West Kalimantan",
+        "regency": "Kapuas Hulu",
+        "displacement_km": 0.44,
+        "propagation_speed_kmd": 0.11,
+        "heading_deg": 330.0,
+        "persistence_risk": "Moderate",
+        "persistence_prob_48h": 0.483
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.12,
+            3.12
+          ],
+          [
+            116.1181504115682,
+            3.123198832572537
+          ]
+        ]
+      },
+      "properties": {
+        "cluster_id": 317,
+        "province": "North Kalimantan",
+        "regency": "Malinau",
+        "displacement_km": 0.41,
+        "propagation_speed_kmd": 0.1,
+        "heading_deg": 330.0,
+        "persistence_risk": "Low",
+        "persistence_prob_48h": 0.227
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            110.248,
+            -1.938
+          ],
+          [
+            110.24489011305766,
+            -1.93261659884134
+          ]
+        ]
+      },
+      "properties": {
+        "cluster_id": 58,
+        "province": "West Kalimantan",
+        "regency": "Ketapang",
+        "displacement_km": 0.69,
+        "propagation_speed_kmd": 0.17,
+        "heading_deg": 330.0,
+        "persistence_risk": "High",
+        "persistence_prob_48h": 0.745
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            117.421,
+            1.845
+          ],
+          [
+            117.41883671635297,
+            1.8487449747190678
+          ]
+        ]
+      },
+      "properties": {
+        "cluster_id": 314,
+        "province": "East Kalimantan",
+        "regency": "Kutai Timur",
+        "displacement_km": 0.48,
+        "propagation_speed_kmd": 0.12,
+        "heading_deg": 330.0,
+        "persistence_risk": "High",
+        "persistence_prob_48h": 0.64
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            112.98,
+            -2.15
+          ],
+          [
+            112.97697985590806,
+            -2.1447726394546343
+          ]
+        ]
+      },
+      "properties": {
+        "cluster_id": 16,
+        "province": "Central Kalimantan",
+        "regency": "Kotawaringin Timur",
+        "displacement_km": 0.67,
+        "propagation_speed_kmd": 0.17,
+        "heading_deg": 330.0,
+        "persistence_risk": "High",
+        "persistence_prob_48h": 0.741
+      }
+    }
+  ]
+}

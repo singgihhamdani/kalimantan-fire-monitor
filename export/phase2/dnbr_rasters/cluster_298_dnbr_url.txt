@@ -1,0 +1,1 @@
+https://earthengine.googleapis.com/v1/projects/riset-banjarnegara/thumbnails/fd7c967ba956020ad09fd13eda82eae1-f1412f2b6e78d85c6150efdce66ddf39:getPixels
