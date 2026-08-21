@@ -30,14 +30,14 @@ flowchart LR
 
 ### 🔍 Apa Temuannya?
 1. **Kalimantan Sedang Mengalami "Demam Tinggi":**
-   * Dalam jendela 7 hari pengamatan, satelit mendeteksi **153.251 sinyal anomali panas**.
-   * Pada jendela 24 jam terakhir (20 Agustus 2026), tercatat **4.888 titik panas operasional** dengan tingkat keyakinan tinggi.
+   * Dalam jendela 7 hari pengamatan, tercatat **4.959 titik panas operasional terverifikasi** di seluruh Kalimantan (dari total 153.251 sinyal anomali termal mentah satelit).
+   * Pada jendela 24 jam terakhir (20 Agustus 2026), terjadi lonjakan tajam **4.888 titik panas operasional**.
 2. **Dua Wilayah Paling Bergejolak:**
-   * **Kalimantan Barat (2.553 titik / 24 jam):** Mengalami lonjakan titik panas baru yang sangat cepat di Kabupaten Sanggau, Sekadau, Landak, dan Ketapang.
+   * **Kalimantan Barat (2.553 titik / 24 jam):** Mengalami lonjakan titik panas baru yang sangat cepat di Kabupaten Sanggau (701 titik), Sekadau (458 titik), dan Landak (394 titik).
    * **Kalimantan Timur (2.009 titik / 24 jam):** Menjadi episentrum pelepasan energi panas paling dahsyat, terpusat di **Kabupaten Berau** (1.228 titik dalam 24 jam).
 3. **Mengelompokkan Titik Panas (*Clustering*):**
    * Titik-titik panas ini tidak berdiri sendiri, melainkan mengumpul menjadi **325 klaster kebakaran besar**.
-   * Klaster terbesar terdeteksi di Berau dengan bentangan area panas mencapai $10 \times 13\text{ km}$.
+   * Klaster terbesar terdeteksi di Berau (Klaster #55 / 220 titik) dengan bentangan area panas mencapai $10,1 \times 13,3\text{ km}$.
 
 > [!NOTE]
 > **Penting Dipahami Orang Awam:**  

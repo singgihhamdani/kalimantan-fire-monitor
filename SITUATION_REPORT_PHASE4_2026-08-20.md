@@ -12,38 +12,37 @@
 Phase 4 (**Fire Intelligence & Risk Modeling**) mentransformasikan seluruh hasil observasi titik panas (Phase 1), bukti luas terbakar optis (Phase 2), dan kondisi cuaca/lahan gambut (Phase 3) menjadi **intelijen prediktif, pemodelan bahaya spasial (KFSI), dan buletin peringatan dini operasional**:
 
 1. 🔴 **1 Klaster Masuk Kategori Peringatan Darurat Kritis (Level 4: Critical Emergency):**
-   * **Klaster #327 (Berau, Kalimantan Timur)** memperoleh **Skor Risiko Komposit tertinggi yaitu 77,1 / 100**. Klaster ini memiliki luas terbakar terkonfirmasi 1.727,77 ha, skor kekeringan tanah tinggi (KBDI 521,4), 587,44 ha terbakar di atas lahan gambut, probabilitas persistensi 48 jam sebesar **88,3% (Extreme)**, dan tingkat kerentanan lanskap KFSI **Very High (0,964)**.
+   * **Klaster #327 (Berau, Kalimantan Timur)** memperoleh **Skor Risiko Komposit tertinggi yaitu 85,2 / 100**. Klaster ini memiliki luas terbakar terkonfirmasi 1.727,77 ha, skor kekeringan tanah tinggi (KBDI 521,4), 587,44 ha terbakar di atas lahan gambut, probabilitas persistensi 48 jam sebesar **99,3% (Extreme)**, dan tingkat kepadatan asap **Dense**.
 
 2. 🟡 **6 Klaster Masuk Kategori Waspada / Siaga (Level 2: Alert):**
-   * Klaster #318 (Landak - Skor 51,6)
-   * Klaster #58 (Ketapang - Skor 49,4)
-   * Klaster #16 (Kotawaringin Timur - Skor 48,9)
-   * Klaster #314 (Kutai Timur - Skor 44,6)
-   * Klaster #299 (Sekadau - Skor 42,8)
-   * Klaster #243 (Sanggau - Skor 42,2)
-   * *Catatan khusus:* Klaster #58 (Ketapang) dan #16 (Kotawaringin Timur) memiliki konsentrasi gambut sangat tinggi (72,5%) dengan probabilitas persistensi aktif 48 jam > 74%.
+   * Klaster #58 (Ketapang - Skor 58,2 | Persistensi 48h: 89,4% | Asap: Dense)
+   * Klaster #318 (Landak - Skor 54,2 | Persistensi 48h: 97,5% | Asap: Moderate)
+   * Klaster #16 (Kotawaringin Timur - Skor 51,2 | Persistensi 48h: 86,2%)
+   * Klaster #299 (Sekadau - Skor 47,4 | Persistensi 48h: 85,8%)
+   * Klaster #243 (Sanggau - Skor 45,5 | Persistensi 48h: 72,7%)
+   * Klaster #314 (Kutai Timur - Skor 41,5 | Persistensi 48h: 63,4%)
 
 3. 🟢 **3 Klaster Masuk Kategori Pemantauan Rutin (Level 1: Monitor):**
-   * Klaster #298 (Kapuas Hulu - Skor 39,1)
-   * Klaster #256 (Bulungan - Skor 36,7)
-   * Klaster #317 (Malinau - Skor 23,5 — kondisi tanah basah KBDI 199,7 dan persistensi rendah 22,7%).
+   * Klaster #256 (Bulungan - Skor 39,0 | Persistensi 48h: 69,0%)
+   * Klaster #298 (Kapuas Hulu - Skor 37,7 | Persistensi 48h: 54,6%)
+   * Klaster #317 (Malinau - Skor 21,9 | Persistensi 48h: 24,4% — kondisi tanah basah KBDI 199,7).
 
 ---
 
 ## 2. Buletin Peringatan Dini Operasional (*Early Warning Bulletin*)
 
-| Peringkat | Klaster | Provinsi | Kabupaten | Skor Risiko (0–100) | Tingkat Peringatan Dini | Ancaman Utama | Luas Terbakar (ha) | Prob. Persistensi 48h | Kelas KFSI |
+| Peringkat | Klaster | Provinsi | Kabupaten | Skor Risiko (0–100) | Tingkat Peringatan Dini | Ancaman Utama | Luas Terbakar (ha) | Prob. Persistensi 48h | Kepadatan Asap |
 |---|---|---|---|---|---|---|---|---|---|
-| **1** | **#327** | Kalimantan Timur | **Berau** | **77,1** | 🔴 **Level 4: Critical Emergency** | Kebakaran Gambut + Defisit Ekstrem | 1.727,77 | **88,3% (Extreme)** | **Very High** |
-| 2 | #318 | Kalimantan Barat | Landak | 51,6 | 🟡 Level 2: Alert | Potensi Perluasan Titik Panas | 0,00* | 87,8% (Extreme) | Very High |
-| 3 | #58 | Kalimantan Barat | Ketapang | 49,4 | 🟡 Level 2: Alert | Potensi Perluasan Titik Panas | 312,97 | 74,5% (High) | Very High |
-| 4 | #16 | Kalimantan Tengah | Kotawaringin Timur | 48,9 | 🟡 Level 2: Alert | Potensi Perluasan Titik Panas | 294,05 | 74,1% (High) | Very High |
-| 5 | #314 | Kalimantan Timur | Kutai Timur | 44,6 | 🟡 Level 2: Alert | Potensi Perluasan Titik Panas | 147,55 | 64,0% (High) | High |
-| 6 | #299 | Kalimantan Barat | Sekadau | 42,8 | 🟡 Level 2: Alert | Potensi Perluasan Titik Panas | 0,00* | 64,7% (High) | High |
-| 7 | #243 | Kalimantan Barat | Sanggau | 42,2 | 🟡 Level 2: Alert | Potensi Perluasan Titik Panas | 0,00* | 63,6% (High) | High |
-| 8 | #298 | Kalimantan Barat | Kapuas Hulu | 39,1 | 🟢 Level 1: Monitor | Aktivitas Termal Terisolir | 111,86 | 48,3% (Moderate) | High |
-| 9 | #256 | Kalimantan Utara | Bulungan | 36,7 | 🟢 Level 1: Monitor | Aktivitas Termal Terisolir | 0,00* | 46,9% (Moderate) | High |
-| 10 | #317 | Kalimantan Utara | Malinau | 23,5 | 🟢 Level 1: Monitor | Aktivitas Termal Terisolir | 90,07 | 22,7% (Low) | Moderate |
+| **1** | **#327** | Kalimantan Timur | **Berau** | **85,2** | 🔴 **Level 4: Critical Emergency** | Kebakaran Gambut + Defisit Ekstrem | 1.727,77 | **99,3% (Extreme)** | **Dense** |
+| 2 | #58 | Kalimantan Barat | Ketapang | 58,2 | 🟡 Level 2: Alert | Potensi Perluasan Titik Panas | 312,97 | 89,4% (High) | Dense |
+| 3 | #318 | Kalimantan Barat | Landak | 54,2 | 🟡 Level 2: Alert | Potensi Perluasan Titik Panas | 0,00* | 97,5% (Extreme) | Moderate |
+| 4 | #16 | Kalimantan Tengah | Kotawaringin Timur | 51,2 | 🟡 Level 2: Alert | Potensi Perluasan Titik Panas | 294,05 | 86,2% (High) | Low |
+| 5 | #299 | Kalimantan Barat | Sekadau | 47,4 | 🟡 Level 2: Alert | Potensi Perluasan Titik Panas | 0,00* | 85,8% (High) | Moderate |
+| 6 | #243 | Kalimantan Barat | Sanggau | 45,5 | 🟡 Level 2: Alert | Potensi Perluasan Titik Panas | 0,00* | 72,7% (High) | Moderate |
+| 7 | #314 | Kalimantan Timur | Kutai Timur | 41,5 | 🟡 Level 2: Alert | Potensi Perluasan Titik Panas | 147,55 | 63,4% (High) | Low |
+| 8 | #256 | Kalimantan Utara | Bulungan | 39,0 | 🟢 Level 1: Monitor | Aktivitas Termal Terisolir | 0,00* | 69,0% (Moderate) | Low |
+| 9 | #298 | Kalimantan Barat | Kapuas Hulu | 37,7 | 🟢 Level 1: Monitor | Aktivitas Termal Terisolir | 111,86 | 54,6% (Moderate) | Low |
+| 10 | #317 | Kalimantan Utara | Malinau | 21,9 | 🟢 Level 1: Monitor | Aktivitas Termal Terisolir | 90,07 | 24,4% (Low) | Low |
 
 *\* Luas 0,00 ha menandakan citra optis pasca-api belum bebas awan pada saat analisis Phase 2.*
 

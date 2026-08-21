@@ -2,7 +2,7 @@
   "phase": 4,
   "title": "Kalimantan Fire Intelligence & Risk Modeling",
   "analysis_date": "2026-08-20",
-  "execution_timestamp": "2026-08-20 19:55:44 UTC",
+  "execution_timestamp": "2026-08-21 04:28:57 UTC",
   "parameters": {
     "ee_project_id": "riset-banjarnegara",
     "smoke_buffer_km": 10.0,
@@ -21,8 +21,8 @@
     "level_3_high_action_count": 0,
     "level_2_alert_count": 6,
     "level_1_monitor_count": 3,
-    "mean_persistence_prob_48h": 0.6348999999999999,
-    "mean_composite_risk_score": 45.50000000000001
+    "mean_persistence_prob_48h": 0.7423,
+    "mean_composite_risk_score": 48.18
   },
   "artifacts_generated": [
     "export/phase4/smoke/cluster_smoke_dispersion.csv",

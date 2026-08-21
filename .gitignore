@@ -35,6 +35,8 @@ INSTAGRAM_POST_CONTENT.md
 *social_media*.md
 
 # Backup & scratch directories
+GEE Eksport/
+GEE Export/
 bc/
 scratch/
 tmp/

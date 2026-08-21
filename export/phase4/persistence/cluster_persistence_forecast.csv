@@ -1,11 +1,11 @@
 cluster_id,province,regency,detection_span_days,frp_start,frp_latest,frp_trend_slope,displacement_km,propagation_speed_kmd,heading_deg,persistence_prob_24h,persistence_prob_48h,persistence_risk
-327,East Kalimantan,Berau,4.0,42.5,55.0,3.12,2.96,0.74,330.0,0.935,0.883,Extreme
-318,West Kalimantan,Landak,4.0,42.5,55.0,3.12,0.8,0.2,330.0,0.933,0.878,Extreme
-299,West Kalimantan,Sekadau,4.0,42.5,55.0,3.12,0.3,0.07,330.0,0.778,0.647,High
-256,North Kalimantan,Bulungan,4.0,42.5,37.5,-1.25,0.3,0.07,330.0,0.628,0.469,Moderate
-243,West Kalimantan,Sanggau,4.0,42.5,55.0,3.12,0.3,0.07,330.0,0.77,0.636,High
-298,West Kalimantan,Kapuas Hulu,4.0,42.5,37.5,-1.25,0.44,0.11,330.0,0.641,0.483,Moderate
-317,North Kalimantan,Malinau,4.0,42.5,37.5,-1.25,0.41,0.1,330.0,0.36,0.227,Low
-58,West Kalimantan,Ketapang,4.0,42.5,37.5,-1.25,0.69,0.17,330.0,0.849,0.745,High
-314,East Kalimantan,Kutai Timur,4.0,42.5,55.0,3.12,0.48,0.12,330.0,0.773,0.64,High
-16,Central Kalimantan,Kotawaringin Timur,4.0,42.5,37.5,-1.25,0.67,0.17,330.0,0.846,0.741,High
+327,Kalimantan Timur,Berau,7.0,120.5,203.9,11.91,2.96,0.42,310.0,0.993,0.993,Extreme
+318,Kalimantan Barat,Landak,7.0,61.2,103.6,6.06,0.8,0.11,330.0,0.987,0.975,Extreme
+299,Kalimantan Barat,Sekadau,7.0,51.0,86.4,5.06,0.3,0.04,330.0,0.92,0.858,Extreme
+256,Kalimantan Utara,Bulungan,7.0,42.2,48.8,0.94,0.3,0.04,310.0,0.81,0.69,High
+243,Kalimantan Barat,Sanggau,7.0,34.0,57.5,3.36,0.3,0.04,330.0,0.836,0.727,High
+298,Kalimantan Barat,Kapuas Hulu,7.0,38.1,33.6,-0.64,0.44,0.06,330.0,0.697,0.546,Moderate
+317,Kalimantan Utara,Malinau,6.0,32.5,28.7,-0.63,0.41,0.07,310.0,0.382,0.244,Low
+58,Kalimantan Barat,Ketapang,6.0,95.7,84.4,-1.88,0.69,0.11,330.0,0.942,0.894,Extreme
+314,Kalimantan Timur,Kutai Timur,6.0,39.2,50.7,1.92,0.48,0.08,310.0,0.768,0.634,High
+16,Kalimantan Tengah,Kotawaringin Timur,5.0,83.6,73.8,-1.96,0.67,0.13,330.0,0.923,0.862,Extreme
