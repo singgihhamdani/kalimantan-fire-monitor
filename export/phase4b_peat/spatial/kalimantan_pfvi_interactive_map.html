@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aa08421b17322c0dc072af2880bdc917 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_aa08421b17322c0dc072af2880bdc917" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_aa08421b17322c0dc072af2880bdc917 = L.map(
+                "map_aa08421b17322c0dc072af2880bdc917",
+                {
+                    center: [0.0, 114.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6167ba074aebf3cddef3896df91174a5 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6167ba074aebf3cddef3896df91174a5.addTo(map_aa08421b17322c0dc072af2880bdc917);
+        
+    
+            var circle_marker_e286f566b9dd96e61fa8287daf901279 = L.circleMarker(
+                [2.274, 117.902],
+                {"bubblingMouseEvents": true, "color": "#91bfdb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#91bfdb", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa08421b17322c0dc072af2880bdc917);
+        
+    
+        var popup_b8cf212d356d6e16bc0db89b86c1f6da = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4f04f15e020f01cc18eaa15f7dd08bab = $(`<div id="html_4f04f15e020f01cc18eaa15f7dd08bab" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 230px;'>       <h4>Klaster #327 (Berau)</h4>       <b>Provinsi:</b> East Kalimantan<br>       <b>Tipe Lahan:</b> Lahan Gambut<br>       <b>Skor PFVI:</b> 57.2 / 300<br>       <b>Klasifikasi:</b> Rendah (Low / Wet)<br>       <b>Muka Air Tanah:</b> -52.1 cm<br>       <b>Prakiraan 7 Hari:</b> 58.1 (+0.9)     </div>     </div>`)[0];
+                popup_b8cf212d356d6e16bc0db89b86c1f6da.setContent(html_4f04f15e020f01cc18eaa15f7dd08bab);
+            
+        
+
+        circle_marker_e286f566b9dd96e61fa8287daf901279.bindPopup(popup_b8cf212d356d6e16bc0db89b86c1f6da)
+        ;
+
+        
+    
+    
+            var circle_marker_28b06cd2a4b374bd9af59db04986a061 = L.circleMarker(
+                [0.211, 109.794],
+                {"bubblingMouseEvents": true, "color": "#91bfdb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#91bfdb", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa08421b17322c0dc072af2880bdc917);
+        
+    
+        var popup_cf2ddea7b64a0398707c9eb60645eff3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7c30f6856da837377b124acf366cd4d1 = $(`<div id="html_7c30f6856da837377b124acf366cd4d1" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 230px;'>       <h4>Klaster #318 (Landak)</h4>       <b>Provinsi:</b> West Kalimantan<br>       <b>Tipe Lahan:</b> Lahan Gambut<br>       <b>Skor PFVI:</b> 1.5 / 300<br>       <b>Klasifikasi:</b> Rendah (Low / Wet)<br>       <b>Muka Air Tanah:</b> -43.2 cm<br>       <b>Prakiraan 7 Hari:</b> 0.0 (-1.5)     </div>     </div>`)[0];
+                popup_cf2ddea7b64a0398707c9eb60645eff3.setContent(html_7c30f6856da837377b124acf366cd4d1);
+            
+        
+
+        circle_marker_28b06cd2a4b374bd9af59db04986a061.bindPopup(popup_cf2ddea7b64a0398707c9eb60645eff3)
+        ;
+
+        
+    
+    
+            var circle_marker_e223a276a8ac1ecf65f60760cf5dbafb = L.circleMarker(
+                [0.086, 110.951],
+                {"bubblingMouseEvents": true, "color": "#91bfdb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#91bfdb", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_aa08421b17322c0dc072af2880bdc917);
+        
+    
+        var popup_7e74dbf0ffadf19d72d2164fb64c3b8c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6af854e977efd7cbadd2630e4568f808 = $(`<div id="html_6af854e977efd7cbadd2630e4568f808" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 230px;'>       <h4>Klaster #299 (Sekadau)</h4>       <b>Provinsi:</b> West Kalimantan<br>       <b>Tipe Lahan:</b> Tanah Mineral<br>       <b>Skor PFVI:</b> 3.8 / 300<br>       <b>Klasifikasi:</b> Rendah (Low / Wet)<br>       <b>Muka Air Tanah:</b> -70.4 cm<br>       <b>Prakiraan 7 Hari:</b> 3.7 (-0.1)     </div>     </div>`)[0];
+                popup_7e74dbf0ffadf19d72d2164fb64c3b8c.setContent(html_6af854e977efd7cbadd2630e4568f808);
+            
+        
+
+        circle_marker_e223a276a8ac1ecf65f60760cf5dbafb.bindPopup(popup_7e74dbf0ffadf19d72d2164fb64c3b8c)
+        ;
+
+        
+    
+    
+            var circle_marker_bd41455b49f6c68cd4ad335e0ba3ffef = L.circleMarker(
+                [2.89, 116.89],
+                {"bubblingMouseEvents": true, "color": "#91bfdb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#91bfdb", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_aa08421b17322c0dc072af2880bdc917);
+        
+    
+        var popup_ed8b5e6e4d70b95e4407d1f2d13dd5d5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dd0e2fa17226f88b79acd8579b382970 = $(`<div id="html_dd0e2fa17226f88b79acd8579b382970" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 230px;'>       <h4>Klaster #256 (Bulungan)</h4>       <b>Provinsi:</b> North Kalimantan<br>       <b>Tipe Lahan:</b> Tanah Mineral<br>       <b>Skor PFVI:</b> 0.0 / 300<br>       <b>Klasifikasi:</b> Rendah (Low / Wet)<br>       <b>Muka Air Tanah:</b> 2.0 cm<br>       <b>Prakiraan 7 Hari:</b> 0.0 (0.0)     </div>     </div>`)[0];
+                popup_ed8b5e6e4d70b95e4407d1f2d13dd5d5.setContent(html_dd0e2fa17226f88b79acd8579b382970);
+            
+        
+
+        circle_marker_bd41455b49f6c68cd4ad335e0ba3ffef.bindPopup(popup_ed8b5e6e4d70b95e4407d1f2d13dd5d5)
+        ;
+
+        
+    
+    
+            var circle_marker_74ab03b4a9eec5df1c9937681adcb432 = L.circleMarker(
+                [0.157, 110.486],
+                {"bubblingMouseEvents": true, "color": "#91bfdb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#91bfdb", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_aa08421b17322c0dc072af2880bdc917);
+        
+    
+        var popup_022a66949d37324764621f29f92367f4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3ce3e7b066aa474c071006e46f9859fb = $(`<div id="html_3ce3e7b066aa474c071006e46f9859fb" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 230px;'>       <h4>Klaster #243 (Sanggau)</h4>       <b>Provinsi:</b> West Kalimantan<br>       <b>Tipe Lahan:</b> Tanah Mineral<br>       <b>Skor PFVI:</b> 83.5 / 300<br>       <b>Klasifikasi:</b> Rendah (Low / Wet)<br>       <b>Muka Air Tanah:</b> -79.9 cm<br>       <b>Prakiraan 7 Hari:</b> 84.2 (+0.7)     </div>     </div>`)[0];
+                popup_022a66949d37324764621f29f92367f4.setContent(html_3ce3e7b066aa474c071006e46f9859fb);
+            
+        
+
+        circle_marker_74ab03b4a9eec5df1c9937681adcb432.bindPopup(popup_022a66949d37324764621f29f92367f4)
+        ;
+
+        
+    
+    
+            var circle_marker_44adb2da794d351844dc3c24dd79af11 = L.circleMarker(
+                [0.45, 112.85],
+                {"bubblingMouseEvents": true, "color": "#91bfdb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#91bfdb", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_aa08421b17322c0dc072af2880bdc917);
+        
+    
+        var popup_19d8434e0f6a4b25d8f4f3f9ad25e278 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d6b8c1e9ba057b876341058b79a4e0d4 = $(`<div id="html_d6b8c1e9ba057b876341058b79a4e0d4" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 230px;'>       <h4>Klaster #298 (Kapuas Hulu)</h4>       <b>Provinsi:</b> West Kalimantan<br>       <b>Tipe Lahan:</b> Tanah Mineral<br>       <b>Skor PFVI:</b> 0.5 / 300<br>       <b>Klasifikasi:</b> Rendah (Low / Wet)<br>       <b>Muka Air Tanah:</b> -53.7 cm<br>       <b>Prakiraan 7 Hari:</b> 0.0 (-0.5)     </div>     </div>`)[0];
+                popup_19d8434e0f6a4b25d8f4f3f9ad25e278.setContent(html_d6b8c1e9ba057b876341058b79a4e0d4);
+            
+        
+
+        circle_marker_44adb2da794d351844dc3c24dd79af11.bindPopup(popup_19d8434e0f6a4b25d8f4f3f9ad25e278)
+        ;
+
+        
+    
+    
+            var circle_marker_b4b4549309cbdcd4a6b060038d200755 = L.circleMarker(
+                [3.12, 116.12],
+                {"bubblingMouseEvents": true, "color": "#91bfdb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#91bfdb", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_aa08421b17322c0dc072af2880bdc917);
+        
+    
+        var popup_8138a3764de9916757fb542f83b9b214 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a95e5281cfebeb6e3f4123f7342abdc0 = $(`<div id="html_a95e5281cfebeb6e3f4123f7342abdc0" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 230px;'>       <h4>Klaster #317 (Malinau)</h4>       <b>Provinsi:</b> North Kalimantan<br>       <b>Tipe Lahan:</b> Tanah Mineral<br>       <b>Skor PFVI:</b> 0.0 / 300<br>       <b>Klasifikasi:</b> Rendah (Low / Wet)<br>       <b>Muka Air Tanah:</b> 0.2 cm<br>       <b>Prakiraan 7 Hari:</b> 0.0 (0.0)     </div>     </div>`)[0];
+                popup_8138a3764de9916757fb542f83b9b214.setContent(html_a95e5281cfebeb6e3f4123f7342abdc0);
+            
+        
+
+        circle_marker_b4b4549309cbdcd4a6b060038d200755.bindPopup(popup_8138a3764de9916757fb542f83b9b214)
+        ;
+
+        
+    
+    
+            var circle_marker_afbf9187f2a71cbf0a20b1b832124d67 = L.circleMarker(
+                [-1.938, 110.248],
+                {"bubblingMouseEvents": true, "color": "#d73027", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa08421b17322c0dc072af2880bdc917);
+        
+    
+        var popup_a72627e58f36ef30ae6d26d9ebff921c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_17f3eacf6e6f55e05edd43bb592745b6 = $(`<div id="html_17f3eacf6e6f55e05edd43bb592745b6" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 230px;'>       <h4>Klaster #58 (Ketapang)</h4>       <b>Provinsi:</b> West Kalimantan<br>       <b>Tipe Lahan:</b> Lahan Gambut<br>       <b>Skor PFVI:</b> 291.8 / 300<br>       <b>Klasifikasi:</b> Sangat Tinggi (Extreme / Critical)<br>       <b>Muka Air Tanah:</b> -66.4 cm<br>       <b>Prakiraan 7 Hari:</b> 300.0 (+8.2)     </div>     </div>`)[0];
+                popup_a72627e58f36ef30ae6d26d9ebff921c.setContent(html_17f3eacf6e6f55e05edd43bb592745b6);
+            
+        
+
+        circle_marker_afbf9187f2a71cbf0a20b1b832124d67.bindPopup(popup_a72627e58f36ef30ae6d26d9ebff921c)
+        ;
+
+        
+    
+    
+            var circle_marker_e131df932f4bd33e6311ed6005e15a83 = L.circleMarker(
+                [1.845, 117.421],
+                {"bubblingMouseEvents": true, "color": "#91bfdb", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#91bfdb", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_aa08421b17322c0dc072af2880bdc917);
+        
+    
+        var popup_501f92506b45f82ea44c5cdab7b61898 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9fc5b272bc9fbb573b575b5c18fec718 = $(`<div id="html_9fc5b272bc9fbb573b575b5c18fec718" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 230px;'>       <h4>Klaster #314 (Kutai Timur)</h4>       <b>Provinsi:</b> East Kalimantan<br>       <b>Tipe Lahan:</b> Tanah Mineral<br>       <b>Skor PFVI:</b> 0.0 / 300<br>       <b>Klasifikasi:</b> Rendah (Low / Wet)<br>       <b>Muka Air Tanah:</b> -64.7 cm<br>       <b>Prakiraan 7 Hari:</b> 0.0 (0.0)     </div>     </div>`)[0];
+                popup_501f92506b45f82ea44c5cdab7b61898.setContent(html_9fc5b272bc9fbb573b575b5c18fec718);
+            
+        
+
+        circle_marker_e131df932f4bd33e6311ed6005e15a83.bindPopup(popup_501f92506b45f82ea44c5cdab7b61898)
+        ;
+
+        
+    
+    
+            var circle_marker_73587e59f7bda2f0c7d6680fac184660 = L.circleMarker(
+                [-2.2, 112.9],
+                {"bubblingMouseEvents": true, "color": "#fc8d59", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_aa08421b17322c0dc072af2880bdc917);
+        
+    
+        var popup_81f75e1c5fc6dd99314de3258e7efaae = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5f59c700e7a688ed1d7bd9f5a6f88fea = $(`<div id="html_5f59c700e7a688ed1d7bd9f5a6f88fea" style="width: 100.0%; height: 100.0%;">     <div style='font-family: Arial; width: 230px;'>       <h4>Klaster #16 (Kotawaringin Timur)</h4>       <b>Provinsi:</b> Central Kalimantan<br>       <b>Tipe Lahan:</b> Lahan Gambut<br>       <b>Skor PFVI:</b> 200.0 / 300<br>       <b>Klasifikasi:</b> Tinggi (High)<br>       <b>Muka Air Tanah:</b> -59.6 cm<br>       <b>Prakiraan 7 Hari:</b> 206.0 (+6.0)     </div>     </div>`)[0];
+                popup_81f75e1c5fc6dd99314de3258e7efaae.setContent(html_5f59c700e7a688ed1d7bd9f5a6f88fea);
+            
+        
+
+        circle_marker_73587e59f7bda2f0c7d6680fac184660.bindPopup(popup_81f75e1c5fc6dd99314de3258e7efaae)
+        ;
+
+        
+    
+</script>
+</html>

@@ -23,7 +23,7 @@
 | **[🔥 Situation Report: Phase 2 (Burned Area)](SITUATION_REPORT_PHASE2_2026-08-20.md)** | Technical Report | Konfirmasi luas terbakar optis (Sentinel-2/Landsat dNBR) & tingkat keparahan |
 | **[🌧️ Situation Report: Phase 3 (Fire Weather)](SITUATION_REPORT_PHASE3_2026-08-20.md)** | Technical Report | Konteks biofisik, defisit CHIRPS 30d/90d, KBDI, dan tutupan gambut |
 | **[🧠 Situation Report: Phase 4 (Fire Intelligence)](SITUATION_REPORT_PHASE4_2026-08-20.md)** | Technical Report | Prakiraan persistensi, trajektori, model KFSI, dan buletin peringatan dini |
-| **[🌱 Situation Report: Phase 4B (Peat Ecohydrology & PFVI)](SITUATION_REPORT_PEAT_PFVI_2026-08-20.md)** | Technical Report | Adaptasi *PeatFR* (Mahdiyasa et al. 2025), retensi van Genuchten & perbandingan KBDI vs PFVI |
+| **[🌱 Situation Report: Phase 4B (Peat Ecohydrology & PFVI)](SITUATION_REPORT_PHASE4B_2026-08-20.md)** | Technical Report | Adaptasi *PeatFR* (Mahdiyasa et al. 2025), retensi van Genuchten & perbandingan KBDI vs PFVI |
 | **[🔬 Technical Methodology](METHODOLOGY.md)** | Scientific Documentation | Landasan matematis, spektral NBR/dNBR, KBDI, KFSI, dan PFVI |
 | **[📑 Data Dictionary](DATA_DICTIONARY.md)** | Developer Reference | Skema data lengkap, nama atribut layer, dan struktur folder ekspor |
 | **[🧪 Validation Report](VALIDATION_REPORT.md)** | Quality Assurance | Matriks pengujian otomatis dan hasil uji integritas sistem |

@@ -8,9 +8,5 @@
   "optimization_algorithm": "Nelder-Mead Simplex via scipy.optimize.minimize",
   "forecasting_model": "ARIMA(1,1,0) / ARIMA(1,0,0) with 7-day lookahead horizon",
   "clusters_evaluated": 10,
-  "peatland_clusters_count": 4,
-  "critical_smoldering_clusters": [
-    58,
-    16
-  ]
+  "peatland_clusters_count": 4
 }
