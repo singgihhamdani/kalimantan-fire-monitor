@@ -149,12 +149,14 @@ kalimantanfire/
 ├── SITUATION_REPORT_PHASE2_2026-08-20.md  # Phase 2 situation report (Burned Area & Severity)
 ├── SITUATION_REPORT_PHASE3_2026-08-20.md  # Phase 3 situation report (Fire Weather & Peatland)
 ├── SITUATION_REPORT_PHASE4_2026-08-20.md  # Phase 4 situation report (Intelligence & Risk)
+├── SITUATION_REPORT_PHASE4B_2026-08-20.md # Phase 4B situation report (Peat Ecohydrology & PFVI)
 ├── BURNED_AREA_REPORT_2026-08-20.md    # Phase 2 technical burned-area assessment
 │
 ├── kalimantan_fire_monitor.ipynb       # Phase 1 Colab notebook (Active-Fire Snapshot)
 ├── kalimantan_burned_area.ipynb        # Phase 2 Colab notebook (Burned-Area Confirmation)
 ├── kalimantan_fire_weather.ipynb       # Phase 3 Colab notebook (Environmental Context)
 ├── kalimantan_fire_intelligence.ipynb  # Phase 4 Colab notebook (Fire Intelligence & Risk)
+├── kalimantan_peat_vulnerability.ipynb # Phase 4B Colab notebook (Peat Ecohydrology & PFVI)
 │
 ├── references/                         # Reference academic papers & publications
 │   └── 1-s2.0-S2666592126000727-main.pdf
@@ -163,7 +165,8 @@ kalimantanfire/
     ├── 2026-08-20/                     # Phase 1 exports (raw, processed, reports)
     ├── phase2/                         # Phase 2 exports (burned_area, dnbr_rasters, clusters)
     ├── phase3/                         # Phase 3 exports (precipitation, weather, peatland)
-    └── phase4/                         # Phase 4 exports (smoke, persistence, risk, reports)
+    ├── phase4/                         # Phase 4 exports (smoke, persistence, risk, reports)
+    └── phase4b_peat/                   # Phase 4B exports (PFVI scores, forecast, plots, geojson)
 ```
 
 ---
@@ -177,6 +180,7 @@ kalimantanfire/
    - `kalimantan_burned_area.ipynb` (Phase 2)
    - `kalimantan_fire_weather.ipynb` (Phase 3)
    - `kalimantan_fire_intelligence.ipynb` (Phase 4)
+   - `kalimantan_peat_vulnerability.ipynb` (Phase 4B)
 3. Authenticate with your Google Earth Engine account (`ee.Authenticate()`).
 4. Set your GEE Project ID in Section 03 (e.g. `EE_PROJECT_ID = 'your-project-id'`).
 5. Run all cells (`Runtime -> Run all`).
