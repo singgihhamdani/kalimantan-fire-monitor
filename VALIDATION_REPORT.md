@@ -171,4 +171,22 @@ The Phase 2 validation suite is executed in **Section 17** of `kalimantan_burned
 | `VAL-P4-09` | Early Warning Classification | Valid Level 1–4 string | Operational alert level assigned without missing values | **READY** |
 | `VAL-P4-10` | Export Artifacts Completeness | GeoTIFF, GeoJSON, CSV, JSON present | All Phase 4 exports created with valid schemas | **READY** |
 
+---
+
+## 9. Phase 4B Validation Matrix — Peatland Ecohydrology & PFVI Forecasting
+
+| Test ID | Test Name | Target / Criteria | Description | Status |
+|---|---|---|---|---|
+| `VAL-P4B-01` | Cluster Ingestion Completeness | `len(df_pfvi_summary) == 10` | All 10 priority clusters processed successfully | **PASS ✓** |
+| `VAL-P4B-02` | PFVI Value Range | `0.0 <= pfvi_score <= 300.0` | PFVI within valid theoretical domain [0, 300] | **PASS ✓** |
+| `VAL-P4B-03` | van Genuchten Parameter $n$ | `n > 1.0` | Pore-size distribution index strictly satisfies $n > 1$ | **PASS ✓** |
+| `VAL-P4B-04` | van Genuchten Parameter $\alpha$ | `alpha > 0.0` | Inverse air-entry pressure strictly positive | **PASS ✓** |
+| `VAL-P4B-05` | van Genuchten Retention $\theta(h)$| `0.0 <= theta <= 1.0` | Effective soil water saturation within physical bounds | **PASS ✓** |
+| `VAL-P4B-06` | 7-Day ARIMA Forecast Bounds | `0.0 <= forecast_pfvi <= 300.0` | Projected 7-day PFVI values remain in valid bounds | **PASS ✓** |
+| `VAL-P4B-07` | Peatland Cluster Identification | `df_pfvi_summary['is_peatland'].sum() >= 4` | Peatland clusters accurately identified and differentiated | **PASS ✓** |
+| `VAL-P4B-08` | Analysis Metadata JSON | File exists & valid JSON | Complete execution metadata recorded | **PASS ✓** |
+| `VAL-P4B-09` | KBDI vs PFVI Comparison CSV | File exists & schema valid | A/B comparative summary generated | **PASS ✓** |
+| `VAL-P4B-10` | Enriched Spatial GeoJSON | File exists & valid GeoJSON | Spatial features contain PFVI and forecast properties | **PASS ✓** |
+
+
 

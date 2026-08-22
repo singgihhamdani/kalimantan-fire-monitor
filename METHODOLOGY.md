@@ -449,4 +449,53 @@ $$\text{Risk Score} = 100 \times \left( 0.25 \cdot \tilde{A}_{\text{burned}} + 0
 | $40 – 59$ | Moderate | Any | 🟡 **Level 2: Alert** | Field patrol verification & drone reconnaissance |
 | $< 40$ | Low | No | 🟢 **Level 1: Monitor** | Routine satellite monitoring |
 
+---
+
+## 26. Peatland Ecohydrology & Peat Fire Vulnerability Index (PFVI)
+
+### 26.1 Scientific Origin & Rationale
+While the standard Keetch-Byram Drought Index (KBDI) was developed for mineral soils in temperate pine forests, tropical peatlands (*Histosols*) possess fundamentally different ecohydrological characteristics, including high organic matter content, high porosity (80–90%), strong capillary forces, and complex water retention properties.
+
+To model the physical susceptibility of tropical peat to smoldering fires, Phase 4B incorporates the **Peat Fire Vulnerability Index (PFVI)** developed by Mahdiyasa et al. (2025; *Ecological Informatics*, 92, 103532) and implemented in the `peatfr` R package.
+
+### 26.2 Mathematical Formulation of PFVI
+
+The recursive daily state equation of PFVI (scaled 0–300) is:
+
+$$\text{PFVI}_{t+1} = \text{PFVI}_t + DF_t - RF_t - WTF_t$$
+
+Where:
+
+1. **Evaporative Drying Factor ($DF_t$):**
+   $$DF_t = \frac{(300 - \text{PFVI}_t) \cdot \left[0.4982 \cdot \exp(0.0905 \cdot T_{\text{max}, t} + 1.6096) - 4.268\right] \cdot \Delta t \cdot 10^{-3}}{1 + 10.88 \cdot \exp(-0.001736 \cdot R_0)}$$
+   Where $T_{\text{max}, t}$ is daily maximum air temperature (°C), $\Delta t = 1$ day, and $R_0 = 3000$ mm is mean annual precipitation.
+
+2. **Effective Precipitation Reduction Factor ($RF_t$):**
+   $$RF_t = \begin{cases} 0, & \text{if } Rf_t < 5.1 \text{ mm} \\ Rf_t - 5.1, & \text{if } Rf_t \ge 5.1 \text{ mm} \end{cases}$$
+   Incorporating a 5.1 mm threshold for canopy and surface litter interception storage.
+
+3. **van Genuchten (1980) Peat Water Retention Factor ($WTF_t$):**
+   Using the classical van Genuchten soil water retention equation to model effective saturation $\theta(h)$ as a function of Water Table Depth $h$ (depth below ground in cm):
+   $$m = 1 - \frac{1}{n}, \quad \theta(h) = \left[1 + \left(\frac{h}{\alpha}\right)^n\right]^{-m}$$
+   $$WTF_t = a_H - b_H \cdot \left[(1 - \theta(h)) \cdot 300\right]$$
+   Where $\alpha > 0$ represents the inverse of air-entry suction, $n > 1$ is the pore-size distribution index, and $a_H, b_H$ are site-specific scaling coefficients.
+
+### 26.3 Parameter Optimization via Nelder-Mead Simplex
+Parameters $(a_H, b_H, n, \alpha)$ are calibrated automatically per priority cluster by minimizing the Mean Squared Error (MSE) against the observation-based peat drought index $DI_{\text{obs}}$:
+
+$$DI_{\text{obs}, t} = 300 \cdot \left(1 - \frac{SM_t - fc}{sat - fc}\right)$$
+$$\min_{a_H, b_H, n, \alpha} \frac{1}{T}\sum_{t=1}^T (\text{PFVI}_t - DI_{\text{obs}, t})^2$$
+
+Where $fc \approx 40\%$ (Field Capacity) and $sat \approx 70\%$ (Saturation) for tropical peat.
+
+### 26.4 PFVI Hazard Classification (0–300 Scale):
+- **Low / Wet ($<100$):** Water table near surface, high soil moisture, minimal smoldering risk.
+- **Moderate ($100–175$):** Surface litter dry, water table within normal seasonal bounds ($<40$ cm depth).
+- **High ($175–225$):** Water table exceeds critical -40 cm threshold, upper peat layer desiccated, smoldering potential begins.
+- **Extreme / Critical ($\ge 225$):** Severe peat desiccation, deep smoldering fire risk, persistent smoke generation, highly resistant to surface suppression.
+
+### 26.5 Time-Series Forecasting (ARIMA Box-Cox)
+Autoregressive integrated moving average (ARIMA) models are applied to project future 7-day trajectories of Temperature, Water Table Depth, and resulting PFVI, generating a forward-looking early warning horizon for peat fire responders.
+
+
 

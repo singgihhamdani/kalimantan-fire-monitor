@@ -414,4 +414,50 @@ Delineated vector polygon features of confirmed burned patches for an individual
 | `early_warning_level`| String | Level | Operational alert (`'Level 1: Monitor'`, `'Level 2: Alert'`, `'Level 3: High Action'`, `'Level 4: Critical Emergency'`). |
 | `primary_threat` | String | Description | Dominant threat factor (e.g. `'Subsurface Peat Fire + High Drought'`, `'Rapid Flame Spread'`). |
 
+---
+
+## 21. Peat Vulnerability Summary Schema (`phase4b_peat/reports/peat_vulnerability_summary.csv`)
+
+| Column | Type | Units | Description |
+|---|---|---|---|
+| `cluster_id` | Int64 | Integer | Priority cluster identifier. |
+| `priority_rank` | Int64 | Rank (1–20) | Cluster priority ranking. |
+| `province` | String | String | Province name. |
+| `regency` | String | String | Regency / Kabupaten name. |
+| `is_peatland` | Boolean | Boolean | Whether cluster intersects verified peatland. |
+| `peatland_pct` | Float64 | Percentage (%) | Percentage of 5 km cluster buffer covered by peat. |
+| `water_table_depth_cm` | Float64 | cm | Simulated/estimated depth to water table below surface. |
+| `soil_moisture_pct` | Float64 | Percentage (%) | Peat volumetric soil moisture content. |
+| `calibrated_param_ah` | Float64 | Float | Nelder-Mead calibrated $a_H$ parameter. |
+| `calibrated_param_bh` | Float64 | Float | Nelder-Mead calibrated $b_H$ parameter. |
+| `calibrated_param_n` | Float64 | Float | van Genuchten pore-size distribution index $n$. |
+| `calibrated_param_alpha` | Float64 | Float | van Genuchten inverse air-entry parameter $\alpha$. |
+| `pfvi_score` | Float64 | Index (0–300) | Calculated Peat Fire Vulnerability Index. |
+| `pfvi_class` | String | Category | Hazard classification (`'Rendah'`, `'Sedang'`, `'Tinggi'`, `'Sangat Tinggi'`). |
+| `forecast_pfvi_7d` | Float64 | Index (0–300) | 7-day forecasted PFVI using ARIMA. |
+| `pfvi_trend_7d` | Float64 | Delta ($\Delta$) | Projected 7-day change in PFVI score. |
+| `van_genuchten_theta` | Float64 | Ratio (0–1) | Effective soil water retention saturation $\theta(h)$. |
+
+---
+
+## 22. KBDI vs PFVI Comparison Schema (`phase4b_peat/reports/kbdi_vs_pfvi_comparison.csv`)
+
+| Column | Type | Units | Description |
+|---|---|---|---|
+| `cluster_id` | Int64 | Integer | Priority cluster identifier. |
+| `province` | String | String | Province name. |
+| `regency` | String | String | Regency name. |
+| `is_peatland` | Boolean | Boolean | Peat association indicator. |
+| `peatland_pct` | Float64 | Percentage (%) | Peat cover percentage in buffer. |
+| `total_burned_ha` | Float64 | Hectares (ha) | Optical burned area (Phase 2). |
+| `kbdi_raw_0_800` | Float64 | Index (0–800) | Raw Keetch-Byram Drought Index score. |
+| `kbdi_norm_0_100` | Float64 | Score (0–100) | Normalized KBDI score ($(\text{KBDI}/800) \times 100$). |
+| `kbdi_class` | String | Category | KBDI classification category. |
+| `pfvi_raw_0_300` | Float64 | Index (0–300) | Raw Peat Fire Vulnerability Index score. |
+| `pfvi_norm_0_100` | Float64 | Score (0–100) | Normalized PFVI score ($(\text{PFVI}/300) \times 100$). |
+| `pfvi_class` | String | Category | PFVI hazard classification. |
+| `score_diff_pfvi_minus_kbdi` | Float64 | Delta ($\Delta$) | Difference between normalized PFVI and normalized KBDI. Positive values highlight heightened peat sensitivity. |
+| `smoldering_vulnerability` | String | Category | Vulnerability to underground smoldering combustion (`'Extreme'`, `'High'`, `'Low (Mineral)'`). |
+
+
 

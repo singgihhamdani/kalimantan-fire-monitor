@@ -1,0 +1,11 @@
+cluster_id,province,regency,is_peatland,peatland_pct,total_burned_ha,kbdi_raw_0_800,kbdi_norm_0_100,kbdi_class,pfvi_raw_0_300,pfvi_norm_0_100,pfvi_class,score_diff_pfvi_minus_kbdi,smoldering_vulnerability
+327,East Kalimantan,Berau,True,34.0,1727.77,521.4,65.2,Kering (Dry),57.2,19.1,Rendah (Low / Wet),-46.1,High
+318,West Kalimantan,Landak,True,34.0,0.0,512.9,64.1,Kering (Dry),1.5,0.5,Rendah (Low / Wet),-63.6,High
+299,West Kalimantan,Sekadau,False,8.5,0.0,478.6,59.8,Kering (Dry),3.8,1.3,Rendah (Low / Wet),-58.5,Low (Mineral)
+256,North Kalimantan,Bulungan,False,8.5,0.0,420.0,52.5,Kering (Dry),0.0,0.0,Rendah (Low / Wet),-52.5,Low (Mineral)
+243,West Kalimantan,Sanggau,False,8.5,0.0,469.3,58.7,Kering (Dry),83.5,27.8,Rendah (Low / Wet),-30.9,Low (Mineral)
+298,West Kalimantan,Kapuas Hulu,False,8.5,111.86,431.0,53.9,Kering (Dry),0.5,0.2,Rendah (Low / Wet),-53.7,Low (Mineral)
+317,North Kalimantan,Malinau,False,8.5,90.07,199.7,25.0,Basah (Wet),0.0,0.0,Rendah (Low / Wet),-25.0,Low (Mineral)
+58,West Kalimantan,Ketapang,True,72.5,312.97,419.8,52.5,Kering (Dry),291.8,97.3,Sangat Tinggi (Extreme / Critical),44.8,Extreme
+314,East Kalimantan,Kutai Timur,False,8.5,147.55,472.9,59.1,Kering (Dry),0.0,0.0,Rendah (Low / Wet),-59.1,Low (Mineral)
+16,Central Kalimantan,Kotawaringin Timur,True,72.5,294.05,415.6,52.0,Kering (Dry),200.0,66.7,Tinggi (High),14.7,High

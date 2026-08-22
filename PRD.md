@@ -633,7 +633,36 @@ While Phases 1–3 provide retrospective and contextual understanding of fire oc
 
 ---
 
-## 14. Future Phases (Roadmap Context)
+## 14. Phase 4B — Peatland Ecohydrology & PFVI Forecasting (PeatFR Adaptation)
+
+### 14.1 Objective
+Adapt and implement the Peat Fire Vulnerability Index (PFVI) from the `peatfr` R package (Mahdiyasa et al., *Ecological Informatics*, 2025) into a native Python workflow. Evaluate the ecohydrological response of tropical peatlands to drought and compare PFVI against the mineral-soil KBDI baseline from Phase 3.
+
+### 14.2 Mathematical Specifications
+1. **Evaporative Drying Factor ($DF$):**
+   $$DF_t = \frac{(300 - \text{PFVI}_t) \cdot \left[0.4982 \cdot \exp(0.0905 \cdot T_t + 1.6096) - 4.268\right] \cdot \Delta t \cdot 10^{-3}}{1 + 10.88 \cdot \exp(-0.001736 \cdot R_0)}$$
+2. **Effective Rainfall Reduction Factor ($RF$):**
+   $$RF_t = \max(0, Rf_t - 5.1)$$
+3. **van Genuchten (1980) Peat Water Retention Factor ($WTF$):**
+   $$\theta(h) = \left[1 + \left(\frac{h}{\alpha}\right)^n\right]^{-(1 - 1/n)}, \quad WTF_t = a_H - b_H \cdot \left[(1 - \theta(h)) \cdot 300\right]$$
+4. **State Equation:**
+   $$\text{PFVI}_{t+1} = \text{PFVI}_t + DF_t - RF_t - WTF_t$$
+5. **Optimization:** Nelder-Mead Simplex optimization minimizing MSE against observed peat moisture drought index $DI_{obs}$.
+
+### 14.3 Functional Requirements (Phase 4B)
+| ID | Requirement | Output |
+|---|---|---|
+| FR34.1 | Ingest Phase 1, 2, and 3 summary data for the 10 priority clusters | DataFrame `df_clusters` |
+| FR34.2 | Extract/reconstruct 60-day ecohydrological series ($Rf, Temp, WTD, SM$) | Series per cluster |
+| FR34.3 | Calibrate van Genuchten parameters ($a_H, b_H, n, \alpha$) via Nelder-Mead | Calibrated parameters |
+| FR34.4 | Compute daily PFVI and classify into 4 hazard levels (Low, Moderate, High, Extreme) | Column `pfvi_score`, `pfvi_class` |
+| FR34.5 | Forecast 7-day future trajectories using autoregressive ARIMA models | DataFrame `df_forecast_7d` |
+| FR34.6 | Conduct A/B comparative benchmarking between normalized KBDI (0–100) and PFVI (0–100) | DataFrame `df_comparison` |
+| FR34.7 | Export Phase 4B reports, spatial GeoJSON, and metadata to `export/phase4b_peat/` | CSV, GeoJSON, JSON |
+
+---
+
+## 15. Future Phases (Roadmap Context)
 
 | Phase | Focus | Key Capabilities |
 |---|---|---|
@@ -641,7 +670,7 @@ While Phases 1–3 provide retrospective and contextual understanding of fire oc
 
 ---
 
-## 15. Guiding Principles
+## 16. Guiding Principles
 
 > 1. **Accuracy before complexity.** (Phase 1)
 > 2. **Confirmation before escalation.** (Phase 2)

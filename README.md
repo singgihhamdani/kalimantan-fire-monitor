@@ -23,10 +23,11 @@
 | **[🔥 Situation Report: Phase 2 (Burned Area)](SITUATION_REPORT_PHASE2_2026-08-20.md)** | Technical Report | Konfirmasi luas terbakar optis (Sentinel-2/Landsat dNBR) & tingkat keparahan |
 | **[🌧️ Situation Report: Phase 3 (Fire Weather)](SITUATION_REPORT_PHASE3_2026-08-20.md)** | Technical Report | Konteks biofisik, defisit CHIRPS 30d/90d, KBDI, dan tutupan gambut |
 | **[🧠 Situation Report: Phase 4 (Fire Intelligence)](SITUATION_REPORT_PHASE4_2026-08-20.md)** | Technical Report | Prakiraan persistensi, trajektori, model KFSI, dan buletin peringatan dini |
-| **[🔬 Technical Methodology](METHODOLOGY.md)** | Scientific Documentation | Landasan matematis, spektral NBR/dNBR, KBDI, dan Multi-Criteria KFSI |
+| **[🌱 Situation Report: Phase 4B (Peat Ecohydrology & PFVI)](SITUATION_REPORT_PEAT_PFVI_2026-08-20.md)** | Technical Report | Adaptasi *PeatFR* (Mahdiyasa et al. 2025), retensi van Genuchten & perbandingan KBDI vs PFVI |
+| **[🔬 Technical Methodology](METHODOLOGY.md)** | Scientific Documentation | Landasan matematis, spektral NBR/dNBR, KBDI, KFSI, dan PFVI |
 | **[📑 Data Dictionary](DATA_DICTIONARY.md)** | Developer Reference | Skema data lengkap, nama atribut layer, dan struktur folder ekspor |
 | **[🧪 Validation Report](VALIDATION_REPORT.md)** | Quality Assurance | Matriks pengujian otomatis dan hasil uji integritas sistem |
-| **[📋 Product Requirements Document](PRD.md)** | Specification | Spesifikasi kebutuhan teknis dan batasan sistem (Phase 1–4) |
+| **[📋 Product Requirements Document](PRD.md)** | Specification | Spesifikasi kebutuhan teknis dan batasan sistem (Phase 1–4B) |
 
 ---
 
@@ -74,16 +75,18 @@ The **Kalimantan Fire Situation Monitor** is a Google Earth Engine & Google Cola
 │ - Output: Integrated environmental summary & provincial reports         │
 └────────────────────────────────────┬────────────────────────────────────┘
                                      │
-                                     ▼
-┌─────────────────────────────────────────────────────────────────────────┐
-│ PHASE 4: Fire Intelligence & Risk (kalimantan_fire_intelligence.ipynb)  │
-│ - Ingest Phase 1, 2, & 3 outputs                                        │
-│ - Sentinel-5P TROPOMI UV Aerosol Index (AAI) & Carbon Monoxide (CO)     │
-│ - Multi-temporal FRP trend & centroid displacement trajectory vectors   │
-│ - 24h & 48h active cluster persistence probability modeling             │
-│ - Kalimantan Fire Susceptibility Index (KFSI) via Multi-Criteria WLC    │
-│ - Top 20 Integrated Risk Profiling & Level 1–4 Early Warning Bulletin   │
-└─────────────────────────────────────────────────────────────────────────┘
+         ┌───────────────────────────┴───────────────────────────┐
+         ▼                                                       ▼
+┌───────────────────────────────────────────┐ ┌───────────────────────────────────────────┐
+│ PHASE 4: Fire Intelligence & Risk         │ │ PHASE 4B: Peat Ecohydrology & PFVI        │
+│ (kalimantan_fire_intelligence.ipynb)      │ │ (kalimantan_peat_vulnerability.ipynb)     │
+│ - Ingest Phase 1, 2, & 3 outputs          │ │ - Ingest Phase 1, 2, & 3 outputs          │
+│ - Sentinel-5P UV Aerosol Index & CO       │ │ - Adapt PeatFR (Mahdiyasa et al. 2025)    │
+│ - FRP trends & centroid displacement      │ │ - van Genuchten soil water retention      │
+│ - 24h & 48h active persistence probability│ │ - Nelder-Mead parameter calibration       │
+│ - Kalimantan Fire Susceptibility (KFSI)   │ │ - 7-day ARIMA Box-Cox PFVI forecasting    │
+│ - Level 1–4 Early Warning Bulletin        │ │ - Head-to-Head Benchmarking: KBDI vs PFVI │
+└───────────────────────────────────────────┘ └───────────────────────────────────────────┘
 ```
 
 ---
